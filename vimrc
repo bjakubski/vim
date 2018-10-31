@@ -13,7 +13,9 @@ Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'saltstack/salt-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'cespare/vim-toml'
 
+" Colorschemes
 Plug 'Lokaltog/vim-distinguished', { 'branch': 'develop' }
 Plug 'vim-scripts/desert256.vim'
 Plug 'dracula/vim'
@@ -22,6 +24,7 @@ Plug 'morhetz/gruvbox'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+colorscheme gruvbox
 
 
 
@@ -32,7 +35,10 @@ set guifont=Hack\ 11
 set pastetoggle=<F12>
 set background=dark
 set mouse=a
-set ttymouse=xterm2
+
+if !has('nvim')
+  set ttymouse=xterm2
+endif
 
 set cursorcolumn
 set cursorline
@@ -46,6 +52,6 @@ let g:gruvbox_contrast_dark = "hard"
 
 
 
-nmap <silent> <unique> <F3> :Buffers<CR>
+" nmap <silent> <unique> <F3> :Buffers<CR>
 map <C-p> :Files<CR>
 map <C-\> :Buffers<CR>
