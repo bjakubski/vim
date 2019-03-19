@@ -14,6 +14,11 @@ Plug 'saltstack/salt-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'cespare/vim-toml'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'google/vim-jsonnet'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Colorschemes
 Plug 'Lokaltog/vim-distinguished', { 'branch': 'develop' }
