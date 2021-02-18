@@ -20,6 +20,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'elixir-editors/vim-elixir'
+Plug 'pearofducks/ansible-vim'
+Plug 'hashivim/vim-terraform'
+
 
 " Colorschemes
 Plug 'Lokaltog/vim-distinguished', { 'branch': 'develop' }
